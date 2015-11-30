@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Directives - Redux</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="galleryMod">
+	<div class="header">
+		<header>Glorious Champions</header>
+	</div>	
+	<div id="gallery1" ng-controller="galleryCtrl">
+		<gallery1 ng-repeat="picture in pictures1" ng-src="picture.src"></gallery>
+	</div>
+	<div id="gallery2" ng-controller="galleryCtrl">
+		<gallery2 ng-repeat="picture in pictures2" ng-src="picture.src"></gallery>
+	</div>
+	<div id="gallery3" ng-controller="galleryCtrl">
+		<gallery3 ng-repeat="picture in pictures3" ng-src="picture.src"></gallery>
+	</div>
+
+<!-- I'm garbage because I cannot get my first two galleries to repeat. -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/gallery1.js"></script>
+	<script src="js/gallery2.js"></script>
+	<script src="js/gallery3.js"></script>
+</body>
+</html>
